@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require("tailwindcss/colors");
 module.exports = {
     content: [
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,7 +8,25 @@ module.exports = {
     theme: {
         colors: {
             ...colors,
-            layer: '#FBF1D4'
+            layer: '#FBF1D4',
+            transparent: "transparent",
+            current: "currentColor",
+            white: "#ffffff",
+            purple: "#3f3cbb",
+            midnight: "#121063",
+            metal: "#565584",
+            tahiti: "#3ab7bf",
+            silver: "#ecebff",
+            "bubble-gum": "#ff77e9",
+            bermuda: "#78dcca",
+            content: "#385D7D",
+            whiteBg: "#FDF8E9",
+            content: "#385D7D",
+            whiteBg: "#FDF8E9",
+            bgInput: "rgba(56, 93, 125, 0.04)",
+            bgButton: "#9E513F",
+            cardContent: "#444444",
+            bgBottom: "#fbf1d440",
         },
         extend: {
             backgroundPosition: {
