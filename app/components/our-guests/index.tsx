@@ -64,7 +64,7 @@ function OurGuests() {
                 Our Guests
               </p>
               <h2
-                className="text-content text-[45px] font-light leading-[53.25px]"
+                className="text-slate-600 text-[45px] font-light leading-[53.25px]"
                 style={{ fontFamily: "Larken" }}
               >
                 {content.title}

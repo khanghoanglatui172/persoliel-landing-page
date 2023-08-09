@@ -72,7 +72,7 @@ function Card({card}: any) {
 
 function WhatWeDo() {
     return (
-        <div className={`mt-24 h-[800px] relative after:absolute after:bottom-[-5.5rem] after:right-0 after:z-[-1] after:w-[22rem] after:h-[25rem] after:bg-[url('/rotated-background-vector.svg')] after:bg-no-repeat after:bg-center after: after:content-['dddddd']`}>
+        <div className={`mt-24 h-[800px] relative after:absolute after:bottom-[-5.5rem] after:right-0 after:z-[-1] after:w-[22rem] after:h-[25rem] after:bg-[url('/rotated-background-vector.svg')] after:bg-no-repeat after:bg-center after: after:content-[""]`}>
             <div className='mb-20'>
                 <h2 className='text-center text-slate-600 text-[1rem] text-base font-medium uppercase tracking-wide'>
                     what we do

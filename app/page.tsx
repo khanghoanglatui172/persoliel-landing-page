@@ -6,6 +6,8 @@ import GetInTouch from "./components/get-in-touch/indext";
 import OurPromise from "@/app/components/our-promise";
 import WhatWeDo from "@/app/components/what-we-do";
 import WhereWeAre from "@/app/components/where-we-are";
+import WhoWeAre from "@/app/components/who-we-are";
+import Testimonials from "@/app/components/testimonials";
 
 export default function Home() {
     return (
@@ -14,10 +16,11 @@ export default function Home() {
             <NavBar/>
             <Banner/>
             <OurPromise/>
-            <OurGuests />
             <WhatWeDo/>
             <WhereWeAre/>
-            <GetInTouch />
+            <OurGuests />
+            <WhoWeAre/>
+            <Testimonials/>
             i am here
         </main>
     )

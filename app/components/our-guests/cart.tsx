@@ -16,7 +16,7 @@ function Cart({ card }: { card: ICard }) {
       </div>
       <div className="p-5">
         <h4
-          className="text-2xl font-normal leading-loose text-content"
+          className="text-slate-600 text-3xl font-normal"
           style={{ fontFamily: "Brother 1816" }}
         >
           {card.title}
