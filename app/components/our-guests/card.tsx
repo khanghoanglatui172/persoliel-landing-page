@@ -8,15 +8,15 @@ interface ICard {
   content: string;
 }
 
-function Cart({ card }: { card: ICard }) {
+function Card({ card }: { card: ICard }) {
   return (
-    <div className="flex flex-col justify-between w-[330px] h-[343px] bg-white shadow relative">
+    <div className="flex flex-col justify-between w-[330px] h-[343px] bg-whiteBg shadow relative">
       <div className="absolute top-0 right-0">
-        <div className="box-our-guests"></div>
+        <div className=" w-[30px] h-[30px] bg-white  after:border-t-[30px] after:border-l-[30px]  after:border-t-rose-800  after:border-l-transparent after:w-0 after:absolute after:right-0 "></div>
       </div>
       <div className="p-5">
         <h4
-          className="text-2xl font-normal leading-loose text-content"
+          className="text-slate-600 text-3xl font-normal"
           style={{ fontFamily: "Brother 1816" }}
         >
           {card.title}
@@ -37,4 +37,4 @@ function Cart({ card }: { card: ICard }) {
   );
 }
 
-export default Cart;
+export default Card;

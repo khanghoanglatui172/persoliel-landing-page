@@ -6,7 +6,14 @@
     background-color: rgb(236,228,209);
 }
 
+.slick-track{
+    display: flex !important;
+    align-items: center !important;
+}
 
+.slick-center #quote-item {
+    @apply bg-[#385D7D] text-white min-h-[22rem]
+}
 
 .app-banner {
     position: relative;
