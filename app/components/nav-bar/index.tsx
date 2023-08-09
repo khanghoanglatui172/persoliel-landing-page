@@ -53,7 +53,7 @@ function NavBar() {
         </div>
         <div className="nav-bar-right flex-grow-0">
           <div className="flex justify-between items-center">
-            <Link href={""} className="text-amber-800 flex items-center">
+            <Link href={"#"} className="text-amber-800 flex items-center">
               <span className="text-right text-[1.0625rem] not-italic font-medium me-3">
                 Sign in
               </span>

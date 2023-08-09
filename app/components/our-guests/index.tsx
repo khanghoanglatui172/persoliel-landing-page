@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Cart from "./cart";
+import Card from "./card";
 
 const content = {
   content: "We match our services to your needs.",
@@ -41,10 +41,10 @@ const content = {
 
 function OurGuests() {
   return (
-    <div id="our-guests" className=" flex justify-center items-center">
+    <div id="our-guests" className="flex justify-center items-center mt-5">
       <div className="grid grid-cols-3 gap-3 relative w-[1286px] h-[1024px] bg-whiteBg">
         <div
-          className="absolute w-[inherit] h-[inherit] top-[-14%]"
+          className="absolute w-[inherit] h-[inherit] top-[-15%]"
           style={{ zIndex: 0 }}
         >
           <Image
@@ -58,7 +58,7 @@ function OurGuests() {
           <div className="z-30 flex items-center flex-col justify-center gap-y-10 p-10">
             <div>
               <p
-                className="text-content w-[173px] h-8 text-slate-600 text-base font-semibold uppercase tracking-wide"
+                className="text-content w-[173px] h-8 text-base font-semibold uppercase tracking-wide"
                 style={{ fontFamily: "Brother 1816" }}
               >
                 Our Guests
@@ -82,7 +82,7 @@ function OurGuests() {
               className="z-30 flex items-center flex-col justify-center p-10"
               key={i}
             >
-              <Cart card={card} />
+              <Card card={card} />
             </div>
           ))}
         </div>
