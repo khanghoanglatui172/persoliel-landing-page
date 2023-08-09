@@ -1,0 +1,13 @@
+.box-our-guests {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+
+.box-our-guests::after {
+  content: " ";
+  border-top: 30px solid #dd4f39;
+  border-left: 30px solid transparent;
+  width: 0;
+  position: absolute;
+}
