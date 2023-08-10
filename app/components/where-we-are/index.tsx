@@ -22,7 +22,7 @@ const highlighted = [
 
 function WhereWeAre() {
     return (
-        <div className={`mt-24 pt-24 h-[1000px]`}
+        <div id='whereweare' className={`pt-24 pt-24 h-[1000px]`}
              style={{background: 'linear-gradient(180deg, #385D7D 35%, #1A4163 100%)'}}>
             <div >
                 <h2 className='text-center text-orange-100 text-[1rem] text-base font-medium uppercase tracking-wide'>
@@ -66,7 +66,7 @@ function WhereWeAre() {
                                 <div className='absolute h-1 w-[100%] top-0 left-0 bg-amber-200'></div>
                                 <div className="w-[282.44px] h-[454.93px] left-[33.05px] top-[34.91px] absolute">
                                     <div className="w-[121.19px] h-[16.93px] left-0 top-0 absolute text-neutral-700 text-base font-medium uppercase leading-none">Choose one:</div>
-                                    <div className="w-[129.20px] h-[414.72px] left-0 top-[40.20px] absolute text-slate-600 text-[15px] font-medium leading-[15px]">Albania<br/><br/>Belgium<br/><br/>Bulgaria<br/><br/>Croatia<br/><br/>Czech Republic<br/><br/>Denmark<br/><br/>Estonia<br/><br/>France<br/><br/>Germany<br/><br/>Greece<br/><br/>Hungary<br/><br/>Iceland<br/><br/>Italy<br/><br/>Latvia</div>
+                                    <div className="w-[129.20px] h-[414.72px] left-0 top-[40.20px] absolute text-app-blue text-[15px] font-medium leading-[15px]">Albania<br/><br/>Belgium<br/><br/>Bulgaria<br/><br/>Croatia<br/><br/>Czech Republic<br/><br/>Denmark<br/><br/>Estonia<br/><br/>France<br/><br/>Germany<br/><br/>Greece<br/><br/>Hungary<br/><br/>Iceland<br/><br/>Italy<br/><br/>Latvia</div>
                                     <div className="w-[142.22px] h-[412.61px] left-[140.22px] top-[40.20px] absolute text-slate-600 text-[15px] font-medium leading-[15px]">Lithuania<br/><br/>Luxembourg<br/><br/>Montenegro<br/><br/>Netherlands<br/><br/>North Madedonia<br/><br/>Norway<br/><br/>Portugal<br/><br/>Romania<br/><br/>Slovakia<br/><br/>Slovenia<br/><br/>Spain<br/><br/>Turkey<br/><br/>United Kingdom<br/></div>
                                 </div>
                             </div>

@@ -41,7 +41,7 @@ const content = {
 
 function OurGuests() {
   return (
-    <div id="our-guests" className="flex justify-center items-center mt-5">
+    <div id="ourpartners" className="flex justify-center items-center mt-5">
       <div className="grid grid-cols-3 gap-3 relative w-[1286px] h-[1024px] bg-whiteBg">
         <div
           className="absolute w-[inherit] h-[inherit] top-[-15%]"
