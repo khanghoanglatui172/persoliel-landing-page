@@ -5,12 +5,7 @@ import React, { useRef } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
-interface IForm {
-  first_name: string;
-  last_name: string;
-  email: string;
-  detail: string;
-}
+import { IForm } from ".";
 
 const validate = Yup.object({
   first_name: Yup.string().max(100).required(),
@@ -50,29 +45,29 @@ export default function Form({
       <div className="w-[42%] h-[400px]">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="w-[100%] h-[400px] flex flex-col justify-around items-center bg-white p-10 shadow-lg">
-            <div className="flex flex-row justify-around items-center bg-bgInput gap-8 columns-3">
+            <div className="w-[90%] flex flex-row justify-around items-center bg-bgInput gap-8 columns-3">
               <input
                 placeholder="First name"
-                className="w-[45%] h-[60px] flex-grow  bg-bgInput"
+                className="w-[100%] h-[60px] flex-grow  bg-bgInput pl-2"
                 type="text"
                 {...register("first_name", { required: true })}
               />
               <input
                 placeholder="Last Name"
-                className="w-[45%] h-[60px] flex-grow  bg-bgInput"
+                className="w-[100%] h-[60px] flex-grow  bg-bgInput pl-2"
                 type="text"
                 {...register("last_name", { required: true })}
               />
             </div>
             <input
-              className="w-[90%] h-[60px] bg-bgInput"
+              className="w-[90%] h-[60px] bg-bgInput pl-2"
               type="text"
               placeholder="Email"
               {...register("email", { required: true })}
             />
-            <input
-              className="w-[90%] h-[60px] bg-bgInput"
-              type="text"
+            <textarea
+              className="w-[90%] h-[90px] bg-bgInput pl-2 pt-2"
+              style={{ resize: "none" }}
               placeholder="Detail"
               {...register("detail", { required: true })}
             />

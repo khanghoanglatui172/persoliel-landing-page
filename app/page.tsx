@@ -11,20 +11,19 @@ import Testimonials from "@/app/components/testimonials";
 import Footer from "./components/footer";
 
 export default function Home() {
-    return (
-        <main>
-            <TopBanner/>
-            <NavBar/>
-            <Banner/>
-            <OurPromise/>
-            <OurGuests />
-            <WhatWeDo/>
-            <WhereWeAre/>
-            <WhoWeAre/>
-            <Testimonials/>
-            <GetInTouch />
-            <Footer />
-        </main>
-    )
-
+  return (
+    <main>
+      <TopBanner />
+      <NavBar />
+      <Banner />
+      <OurPromise />
+      <OurGuests />
+      <WhatWeDo />
+      <WhereWeAre />
+      <WhoWeAre />
+      <Testimonials />
+      <GetInTouch />
+      <Footer />
+    </main>
+  );
 }

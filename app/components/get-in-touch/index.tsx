@@ -3,13 +3,15 @@ import mg from "@/lib/SendEmail";
 import React from "react";
 import Form from "./form";
 import Card from "./card";
-import Collaborate from "./collaborate";
+import Collaborate from "../footer/collaborate";
 import Image from "next/image";
+import Reserve from "./reserve";
 
 export interface IForm {
   first_name: string;
   last_name: string;
   email: string;
+  detail: string;
 }
 
 const getInTouchData = {
@@ -25,8 +27,13 @@ function GetInTouch() {
       await mg.messages.create(emailConfig.domain || "tuanprodd@gmail.com", {
         from: `Excited User <${emailConfig.email}>`,
         to: ["tuandd.310797@gmail.com"],
-        subject: "test",
-        message: `${JSON.stringify(form)}`,
+        subject: "New request - get in touch",
+        html: `
+        <h1 style="margin-bottom: 10px;" >New request - get in touch</h1>
+        <p style="margin-bottom: 10px;" ><strong>Name:</strong> ${form.first_name} ${form.last_name}</p>
+        <p style="margin-bottom: 10px;" ><strong>Email:</strong> ${form.email}</p>
+        <p style="margin-bottom: 10px;" ><strong>Detail:</strong> ${form.detail}</p>
+      `,
       });
       return true;
     } catch (error) {
@@ -35,8 +42,9 @@ function GetInTouch() {
   }
 
   return (
-    <div className="flex justify-center items-center ">
-      <div className="w-[1286px] h-[850px] bg-orange-100 z-50 flex flex-col gap-10 py-10 relative">
+    <div className="flex flex-col justify-center items-center ">
+      <Reserve />
+      <div className="w-[1286px] bg-orange-100 z-50 flex flex-col gap-10 py-20 relative">
         <div>
           <h5 className="h-8 text-center text-content text-base font-medium uppercase tracking-wide">
             Get In Touch
@@ -49,8 +57,7 @@ function GetInTouch() {
           <Form submit={handleSubmit} />
           <Card />
         </div>
-        <Collaborate />
-        <div className="absolute top-[30%] right-12 flex flex-col gap-8">
+        <div className="absolute top-[36%] right-12 flex flex-col gap-8">
           <Image
             src="/icon-instagram.svg"
             alt="icon-instagram"
