@@ -39,6 +39,7 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
+    "@builder.io/partytown": "^0.8.0",
     "@types/react-simple-maps": "^3.0.0",
     "@types/react-slick": "^0.23.10",
     "react-hook-form": "^7.45.4",
