@@ -9,8 +9,12 @@ module.exports = {
     theme: {
         colors: {
             ...colors,
+            'app-bg': '#ECE4D1',
             layer: '#FBF1D4',
             'layer-blue': '#385d7d',
+            'app-blue': '#385D7D',
+            'app-amber': '#9E513F',
+            'app-dark' :'#444',
             transparent: "transparent",
             current: "currentColor",
             white: "#ffffff",
@@ -46,6 +50,9 @@ module.exports = {
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
+            objectPosition:{
+                'banner-video': '11.7rem'
+            }
         },
     },
     plugins: [],

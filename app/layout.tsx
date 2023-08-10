@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${brother1816.variable} ${larken.variable} font-sans`}>
+    <html lang="en" className={`${brother1816.variable} ${larken.variable} font-sans scroll-smooth`}>
       <body>
          {children}
       </body>

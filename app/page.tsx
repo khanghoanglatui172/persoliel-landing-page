@@ -1,6 +1,5 @@
 import NavBar from "@/app/components/nav-bar";
 import Banner from "@/app/components/banner";
-import TopBanner from "@/app/components/top-banner";
 import OurGuests from "./components/our-guests";
 import GetInTouch from "./components/get-in-touch";
 import OurPromise from "@/app/components/our-promise";
@@ -13,13 +12,12 @@ import Footer from "./components/footer";
 export default function Home() {
     return (
         <main>
-            <TopBanner/>
             <NavBar/>
             <Banner/>
             <OurPromise/>
-            <OurGuests />
             <WhatWeDo/>
             <WhereWeAre/>
+            <OurGuests/>
             <WhoWeAre/>
             <Testimonials/>
             <GetInTouch />
