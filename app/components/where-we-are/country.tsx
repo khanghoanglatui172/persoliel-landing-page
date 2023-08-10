@@ -9,7 +9,7 @@ function Country({name, isLast, onClick}: any) {
 
     return (
         <>
-            <div className='me-2 `'>
+            <div className='me-2'>
                 <Image src={`/${name === 'Europe' ? 'active-dot.svg' : 'white-dot.svg'}`} alt=''
                        width={15} height={15}/>
                 {!isLast &&

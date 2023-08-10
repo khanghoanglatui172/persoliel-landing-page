@@ -88,7 +88,7 @@ function Testimonials() {
 
   return (
     <div
-      className={`bg-[url('/background-contourmap3.svg')] pt-24 bg-no-repeat bg-cover bg-testimonials-percentage w-[100%] h-[50rem]`}
+      className={`bg-[url('/background-contourmap3.svg')] pt-24 bg-no-repeat bg-cover bg-testimonials-percentage w-[100%] h-[50rem] px-20`}
     >
       <div>
         <h2 className="mb-11 text-center text-slate-600 text-[1rem] text-base font-medium uppercase tracking-wide">
@@ -98,7 +98,7 @@ function Testimonials() {
           From travelers like you:
         </h1>
       </div>
-      <div className="mt-16 m-auto w-4/5 h-[28rem] relative">
+      <div className="mt-16 m-auto h-[28rem] relative">
         <div className="w-[100%] h-[100%] absolute top-[0%]">
           <Slider {...settings}>
             {quotes.map((e, index) => {
