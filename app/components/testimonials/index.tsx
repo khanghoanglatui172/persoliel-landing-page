@@ -88,7 +88,7 @@ function Testimonials() {
 
   return (
     <div
-      className={`bg-[url('/background-contourmap3.svg')] pt-24 bg-no-repeat bg-cover bg-testimonials-percentage w-[100%] h-[85rem]`}
+      className={`bg-[url('/background-contourmap3.svg')] pt-24 bg-no-repeat bg-cover bg-testimonials-percentage w-[100%] h-[50rem]`}
     >
       <div>
         <h2 className="mb-11 text-center text-slate-600 text-[1rem] text-base font-medium uppercase tracking-wide">
@@ -105,23 +105,6 @@ function Testimonials() {
               return <QuoteItem key={e.id} quote={e} />;
             })}
           </Slider>
-        </div>
-      </div>
-      <div
-        className={`bg-[url('/woman-in-lounge.jpg')] bg-discover-perq-soleil bg-cover w-[100%] h-[35rem] relative`}
-      >
-        <div className="absolute w-[100%] h-[100%] top-0 right-0 z-[1] bg-gradient-to-r from-layer-blue from-25% to-50%"></div>
-        <div className="absolute w-[20rem] h-[100%] top-[5rem] left-[8%] z-[2] text-amber-50">
-          <h1 className="text-[3.6rem] mb-12 font-light leading-[4.4rem]">
-            Discover the Perq Soleil difference.
-          </h1>
-          <Link href="#" className="w-56 h-[73px] relative">
-            <div className="w-[210.95px] h-[61px] left-[6.52px] top-[6px] absolute bg-amber-800" />
-            <div className="w-56 h-[73px] left-0 top-0 absolute border border-amber-800" />
-            <div className="w-[210.95px] h-[26px] left-[6.52px] top-[20.45px] absolute text-center text-amber-50 text-[19px] font-medium uppercase">
-              reserve now
-            </div>
-          </Link>
         </div>
       </div>
     </div>
