@@ -11,12 +11,10 @@ function Card({ card }: { card: ICard }) {
   return (
     <div className="flex flex-col justify-between w-[330px] h-[343px] bg-whiteBg shadow relative">
       <div className="absolute top-0 right-0">
-        <div className=" w-[30px] h-[30px] bg-white  after:border-t-[30px] after:border-l-[30px]  after:border-t-rose-800  after:border-l-transparent after:w-0 after:absolute after:right-0 "></div>
+        <div className=" w-[30px] h-[30px] bg-white after:border-t-[30px] after:border-l-[30px] after:border-t-rose-800 after:border-l-transparent after:w-0 after:absolute after:right-0"></div>
       </div>
-      <div className="p-5">
-        <h4
-          className="text-slate-600 text-3xl font-normal font-brother1816"
-        >
+      <div className="p-5 bg-white h-[100%]">
+        <h4 className="text-slate-600 text-3xl font-normal font-brother1816">
           {card.title}
         </h4>
         <p className="text-content text-[17px] leading-[22.95px] mt-5">

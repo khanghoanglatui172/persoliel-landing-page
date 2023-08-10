@@ -63,16 +63,10 @@ function OurGuests() {
               >
                 Our Guests
               </p>
-              <h2
-                className="text-slate-600 text-[45px] font-light leading-[53.25px]"
-                style={{ fontFamily: "Larken" }}
-              >
+              <h2 className="text-slate-600 text-[40px] text-larken leading-[53.25px]">
                 {content.title}
               </h2>
-              <p
-                className="w-60 h-[58px] text-neutral-700 text-[21px] leading-[29.40px]"
-                style={{ fontFamily: "Brother 1816" }}
-              >
+              <p className="w-60 h-[58px] text-neutral-700 text-[21px] leading-[29.40px]">
                 {content.content}
               </p>
             </div>

@@ -5,11 +5,11 @@ import Collaborate from "./collaborate";
 function Footer() {
   return (
     <div className="flex flex-col justify-center items-center pb-10">
-      <div className="w-[1286px] h-[auto] bg-orange-100 flex flex-col gap-10">
-        <Collaborate />
+      <Collaborate />
+      <div className="w-[1286px] h-[auto] bg-orange-100 flex flex-col gap-10 pt-7">
         <div className="flex flex-row justify-center gap-32 px-12">
           <div className="w-[600px] flex-grow">
-            <p className="text-neutral-700 text-[24px] leading-[29.40px] pl-10">
+            <p className="text-cardContent text-[21px] pl-10">
               Perq Soleil was founded in Washington, DC in 2009 to provide
               premium Meet & Assist services to travelers worldwide.
             </p>

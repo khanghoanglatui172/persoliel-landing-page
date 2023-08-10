@@ -40,7 +40,7 @@ function Advisors() {
   }
   return (
     <div className="flex items-center justify-center h-[100vh]">
-      <div className="w-[80rem] h-[52.625rem] relative bg-white bg-opacity-50 flex">
+      <div className="w-[80%] h-[75%] relative bg-white bg-opacity-50 flex overflow-auto">
         <Information />
         <FormAdvisors submit={handleSubmit} />
       </div>

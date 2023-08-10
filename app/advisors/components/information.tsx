@@ -14,14 +14,14 @@ function Information() {
           className="w-[150px] h-[140px]"
         />
       </div>
-      <div className="flex flex-col gap-16 mt-[13.563rem] h-[26.25rem] w-[100%]">
+      <div className="flex flex-col gap-12 mt-[13.563rem] h-[26.25rem] w-[100%] px-8">
         <div className="flex-grow">
-          <h3 className="text-content text-[57px] font-light leading-[62.70px]">
+          <h3 className="text-content text-[50px] font-light leading-[62.70px] font-larken">
             Elevate your clients’ airport journeys.
           </h3>
         </div>
         <div className="flex-grow">
-          <p className="text-neutral-700 text-[26.50px] leading-[37.09px]">
+          <p className="text-cardContent text-[23.50px] leading-[38.09px]">
             Deliver unparalleled airport concierge services to your most valued
             clients.
           </p>
@@ -30,10 +30,17 @@ function Information() {
           <div className="w-[17.19px] h-[132px]">
             <Bullets />
           </div>
-          <div className="flex flex-col gap-8">
-            <p>Make us your preferred Meet & Assist vendor Our competitive</p>
-            <p> commission rates start at 10% We serve VIPs, celebrities,</p>
-            <p> executives, dignitaries, seniors, UM, and families</p>
+          <div className="flex flex-col mt-[-5px] gap-9">
+            <p className="text-[18px] font-brother1816">
+              Make us your preferred Meet & Assist vendor
+            </p>
+            <p className="text-[18px] font-brother1816">
+              Our competitive commission rates start at 10% We serve VIPs,
+            </p>
+            <p className="text-[18px] font-brother1816">
+              We serve VIPs, celebrities, executives, dignitaries, seniors, UM,
+              and families
+            </p>
           </div>
         </div>
       </div>
