@@ -31,6 +31,10 @@ module.exports = {
             bgBottom: "#fbf1d440",
         },
         extend: {
+            fontFamily: {
+                brother1816: ['var(--font-brother1816)'],
+                larken: ['var(--font-larken)'],
+            },
             backgroundPosition: {
                 'who-we-are-percentage': '5% 35%',
                 'testimonials-percentage': '5% 170%',

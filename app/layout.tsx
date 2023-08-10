@@ -1,6 +1,35 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import Index from "@/app/components/nav-bar";
+import localFont from '@next/font/local'
+
+const brother1816 = localFont({
+    src: [
+        {
+            path: '../public/fonts/05-brother1816-book-web.woff',
+            weight: '300'
+        },
+        {
+            path: '../public/fonts/07-brother1816-regular-web.woff',
+            weight: '400'
+        },
+        {
+            path: '../public/fonts/09-brother1816-medium-web.woff',
+            weight: '500'
+        },
+    ],
+    variable: '--font-brother1816'
+})
+
+const larken = localFont({
+    src: [
+        {
+            path: '../public/fonts/Larken-Light.woff',
+            weight: '300'
+        },
+    ],
+    variable: '--font-larken'
+})
+
 
 export const metadata: Metadata = {
   title: 'Perq Soliel',
@@ -13,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${brother1816.variable} ${larken.variable} font-sans`}>
       <body>
          {children}
       </body>

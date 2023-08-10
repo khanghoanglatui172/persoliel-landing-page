@@ -16,8 +16,7 @@ function Card({ card }: { card: ICard }) {
       </div>
       <div className="p-5">
         <h4
-          className="text-slate-600 text-3xl font-normal"
-          style={{ fontFamily: "Brother 1816" }}
+          className="text-slate-600 text-3xl font-normal font-brother1816"
         >
           {card.title}
         </h4>
