@@ -11,18 +11,18 @@ import Footer from "./components/footer";
 import TopBanner from "./components/top-banner";
 
 export default function Home() {
-  return (
-    <main>
-      <NavBar />
-      <Banner />
-      <OurPromise />
-      <OurGuests />
-      <WhatWeDo />
-      <WhereWeAre />
-      <WhoWeAre />
-      <Testimonials />
-      <GetInTouch />
-      <Footer />
-    </main>
-  );
+    return (
+        <main>
+            <NavBar/>
+            <Banner/>
+            <OurPromise/>
+            <WhatWeDo/>
+            <WhereWeAre/>
+            <OurGuests/>
+            <WhoWeAre/>
+            <Testimonials/>
+            <GetInTouch/>
+            <Footer/>
+        </main>
+    );
 }
