@@ -23,7 +23,7 @@ const headers = [
 ];
 function NavBar() {
   return (
-    <div className='sticky top-0 z-50 w-full bg-app-bg'>
+    <div className='sticky top-0 z-[100] w-full bg-app-bg'>
       <TopBanner/>
       <div className="nav-bar text-app-blue">
         <div className="w-5/6 h-16 m-auto flex items-center relative">

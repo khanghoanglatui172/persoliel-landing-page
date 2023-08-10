@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import {ComposableMap, Geographies, Geography} from 'react-simple-maps'
+import Country from "@/app/components/where-we-are/country";
 
 const countries = [
     'Africa', 'Asia', 'Australia/ Oceania', 'Europe', 'North America', 'South America'
@@ -45,20 +46,11 @@ function WhereWeAre() {
                     <div className='relative'>
                         <ul>
                             {
-                                countries.length && countries.map((text: string, index: number) => {
-                                    return (
+                                countries.length && countries.map((text: string, index: number) =>  (
                                         <li key={index} className='h-[4rem] overflow-hidden flex'>
-                                            <div className='me-2 `'>
-                                                <Image src={`/${text === 'Europe' ? 'active-dot.svg' : 'white-dot.svg'}`} alt=''
-                                                       width={15} height={15}/>
-                                                {countries.length - 1 !== index &&
-                                                    <Image src='/line-2.svg' alt='' width={3} height={1}
-                                                           className='w-[1rem] h-[10rem]'/>}
-                                            </div>
-                                            <p className={`text-white ${text === 'Europe' ? '' : 'text-opacity-50'} text-xl font-medium leading-[0.9rem]`}>{text}</p>
+                                            <Country name={text} isLast={countries.length - 1 === index}/>
                                         </li>
-                                    )
-                                })
+                                    ))
                             }
                         </ul>
                         <div className='absolute top-[-2.5rem] left-[15rem] z-[3]'>
