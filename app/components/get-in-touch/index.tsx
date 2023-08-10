@@ -44,7 +44,7 @@ function GetInTouch() {
   return (
     <div className="flex flex-col justify-center items-center ">
       <Reserve />
-      <div className="w-[1286px] bg-orange-100 z-50 flex flex-col gap-10 py-20 relative">
+      <div className="w-[100%] max-w-screen-xl bg-orange-100 z-50 flex flex-col gap-10 py-20 relative">
         <div>
           <h5 className="h-8 text-center text-content text-base font-larken uppercase tracking-wide">
             Get In Touch

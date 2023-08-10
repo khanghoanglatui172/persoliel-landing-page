@@ -5,7 +5,7 @@ import Link from "next/link";
 function Collaborate() {
   return (
     <div className="h-[176px] bg-amber-50 flex flex-row items-center justify-center gap-10 px-16 w-[100%] max-w-screen-xl">
-      <div className="flex flex-row items-center justify-between px-16 w-[1286px]">
+      <div className="flex flex-row items-center justify-between px-6 w-[1286px]">
         <div className="w-[177px] h-[110px]">
           <Image
             src="/icons/icon-signin-arrow.svg"

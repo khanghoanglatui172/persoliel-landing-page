@@ -41,8 +41,8 @@ const content = {
 
 function OurGuests() {
   return (
-    <div id="ourpartners" className="flex justify-center items-center mt-5">
-      <div className="grid grid-cols-3 gap-3 relative w-[1286px] h-[1024px] bg-whiteBg">
+    <div id="ourpartners" className="w-[100%] max-w-screen-xl">
+      <div className="relative w-[100%] h-[1024px] bg-whiteBg">
         <div
           className="absolute w-[inherit] h-[inherit] top-[-15%]"
           style={{ zIndex: 0 }}

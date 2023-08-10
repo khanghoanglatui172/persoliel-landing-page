@@ -4,9 +4,9 @@ import Collaborate from "./collaborate";
 
 function Footer() {
   return (
-    <div className="flex flex-col justify-center items-center pb-10">
+    <div className="flex flex-col justify-center items-center pb-10  max-w-screen-xl">
       <Collaborate />
-      <div className="w-[1286px] h-[auto] bg-orange-100 flex flex-col gap-10 pt-7">
+      <div className="h-[auto] w-[100%] bg-orange-100 flex flex-col gap-10 pt-7">
         <div className="flex flex-row justify-center gap-32 px-12">
           <div className="w-[600px] flex-grow">
             <p className="text-cardContent text-[21px] pl-10">
