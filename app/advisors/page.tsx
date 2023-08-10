@@ -39,8 +39,8 @@ function Advisors() {
     }
   }
   return (
-    <div className="flex items-center justify-center h-[100vh]">
-      <div className="w-[80%] h-[75%] relative bg-white bg-opacity-50 flex overflow-auto">
+    <div className="flex items-center justify-center h-[100vh] bg-white bg-opacity-50 overflow-auto">
+      <div className="flex flex-row p relative bg-white bg-opacity-50 overflow-auto bg-[url('/backgrounds/background-contourmap4-subpage.svg')] bg-repeat-x bg-advisor-bg">
         <Information />
         <FormAdvisors submit={handleSubmit} />
       </div>

@@ -4,7 +4,7 @@ import Bullets from "./bullest";
 
 function Information() {
   return (
-    <div className="flex justify-center relative flex-grow w-[50%] pl-[4.688rem]">
+    <div className="flex justify-center relative flex-grow w-[50%] px-[2.333rem]">
       <div className="w-[150px] h-[140px] absolute top-0 left-[4.688rem]">
         <Image
           src="/logo.svg"
@@ -26,7 +26,7 @@ function Information() {
             clients.
           </p>
         </div>
-        <div className="flex flex-row gap-4">
+        <div className="flex gap-4">
           <div className="w-[17.19px] h-[132px]">
             <Bullets />
           </div>

@@ -47,6 +47,7 @@ module.exports = {
         "testimonials-percentage": "5% 50%",
         "discover-perq-soleil": "26rem -9rem",
         "left-center": "center left 5rem",
+        "advisor-bg": "center 100%",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
