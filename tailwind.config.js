@@ -10,6 +10,7 @@ module.exports = {
         colors: {
             ...colors,
             layer: '#FBF1D4',
+            'layer-blue': '#385d7d',
             transparent: "transparent",
             current: "currentColor",
             white: "#ffffff",
@@ -32,7 +33,9 @@ module.exports = {
         extend: {
             backgroundPosition: {
                 'who-we-are-percentage': '5% 35%',
-                'testimonials-percentage': '5% 170%'
+                'testimonials-percentage': '5% 170%',
+                'discover-perq-soleil': '26rem -9rem',
+                'left-center': 'center left 5rem'
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

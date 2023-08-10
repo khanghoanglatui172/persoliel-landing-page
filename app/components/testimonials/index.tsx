@@ -4,6 +4,7 @@ import Image from "next/image";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+import Link from "next/link";
 
 const quotes = [
     {
@@ -63,7 +64,6 @@ function QuoteItem({quote}: any) {
 }
 
 function Testimonials() {
-    const [activeItem, setActiveItem] =useState<boolean>(false);
     const settings = {
         centerMode: true,
         className: "center",
@@ -89,12 +89,11 @@ function Testimonials() {
                     From travelers like you:
                 </h1>
             </div>
-            <div className='mt-16 m-auto w-4/5 relative'>
-                <div className='w-[100%] h-[100%] absolute top-[50%] bg-slate-500'>
+            <div className='mt-16 m-auto w-4/5 h-[28rem] relative'>
+                <div className='w-[100%] h-[100%] absolute top-[0%]'>
                     <Slider {...settings}>
                         {
                             quotes.map((e, index) => {
-                                const middleItem = index
                                 return (
                                     <QuoteItem key={e.id} quote={e}/>
                                 )
@@ -102,7 +101,19 @@ function Testimonials() {
                         }
                     </Slider>
                 </div>
-
+            </div>
+            <div className={`bg-[url('/woman-in-lounge.jpg')] bg-discover-perq-soleil bg-cover w-[100%] h-[35rem] relative`}>
+                <div className='absolute w-[100%] h-[100%] top-0 right-0 z-[1] bg-gradient-to-r from-layer-blue from-25% to-50%'></div>
+                <div className='absolute w-[20rem] h-[100%] top-[5rem] left-[8%] z-[2] text-amber-50'>
+                    <h1 className='text-[3.6rem] mb-12 font-light leading-[4.4rem]'>
+                        Discover the Perq Soleil difference.
+                    </h1>
+                    <Link href='#' className="w-56 h-[73px] relative">
+                        <div className="w-[210.95px] h-[61px] left-[6.52px] top-[6px] absolute bg-amber-800" />
+                        <div className="w-56 h-[73px] left-0 top-0 absolute border border-amber-800" />
+                        <div className="w-[210.95px] h-[26px] left-[6.52px] top-[20.45px] absolute text-center text-amber-50 text-[19px] font-medium uppercase">reserve now</div>
+                    </Link>
+                </div>
             </div>
         </div>
     );
