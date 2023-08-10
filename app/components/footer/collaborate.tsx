@@ -26,7 +26,7 @@ function Collaborate() {
         >
           <span>BECOME A PARTNER</span>
           <Image
-            src="/icon-signin-arrow.svg"
+            src="/icons/icon-signin-arrow.svg"
             alt="arrow-signin"
             width={14}
             height={0}

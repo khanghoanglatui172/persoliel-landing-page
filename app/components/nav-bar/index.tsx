@@ -41,7 +41,7 @@ function NavBar() {
 
     useEffect(() => {
         if (scrollTop > 112) {
-            setPosition('fixed p-4 w-[100%] justify-center transition-all duration-500')
+            setPosition('fixed p-4 min-w-full justify-center transition-all duration-500')
         } else setPosition('sticky pe-20')
     }, [scrollTop])
 
