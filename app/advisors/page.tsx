@@ -39,11 +39,11 @@ function Advisors() {
     }
   }
   return (
-    <div className="flex items-center justify-center h-[100vh] bg-white bg-opacity-50 overflow-auto">
-      <div className="flex flex-row p relative bg-white bg-opacity-50 overflow-auto bg-[url('/backgrounds/background-contourmap4-subpage.svg')] bg-repeat-x bg-advisor-bg">
-        <Information />
-        <FormAdvisors submit={handleSubmit} />
-      </div>
+    <div className="flex justify-center h-[100vh] w-[100vw] bg-opacity-50 overflow-auto">
+      {/* <div className="flex relative bg-white bg-opacity-50 overflow-auto"> */}
+      <Information />
+      <FormAdvisors submit={handleSubmit} />
+      {/* </div> */}
     </div>
   );
 }

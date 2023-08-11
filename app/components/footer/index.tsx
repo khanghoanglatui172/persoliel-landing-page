@@ -9,7 +9,7 @@ function Footer() {
       <div className="h-[auto] w-[100%] bg-orange-100 flex flex-col gap-10 pt-7">
         <div className="flex flex-row justify-center gap-32 px-12">
           <div className="w-[600px] flex-grow">
-            <p className="text-cardContent text-[21px] pl-10">
+            <p className="text-cardContent text-[21px] pl-14">
               Perq Soleil was founded in Washington, DC in 2009 to provide
               premium Meet & Assist services to travelers worldwide.
             </p>
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="pl-20 mt-5 flex flex-row justify-start gap-10 text-[15px] w-[1286px]">
+      <div className="pl-20 mt-5 flex flex-row justify-start gap-10 text-[15px] w-[100%]">
         <p>© 2023 Perq Soleil. All Rights Reserved.</p>
         <p>(202) 573-7705</p>
         <p>contact@perqsoleil.com</p>

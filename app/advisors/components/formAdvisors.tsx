@@ -54,9 +54,9 @@ function FormAdvisors({
   };
 
   return (
-    <div className="relative flex-grow w-[50%] pt-[4.563rem] gap-5 h-[100%] p-10 px-16">
+    <div className="relative flex-grow w-[50%] h-[100%] min-h-[842px] pt-[4.563rem] my-auto pb-10 px-16 bg-layer bg-[url('/backgrounds/background-contourmap4-subpage.svg')] bg-repeat-x bg-advisor-bg">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-col justify-around items-center flex-grow gap-5 h-[100%] w-[100%]">
+        <div className="flex flex-col justify-around items-center flex-grow gap-5 w-[100%]">
           <div className="w-[100%]">
             <h4 className="text-bgButton text-3xl font-normal leading-loose text-start">
               Get in touch
