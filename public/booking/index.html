@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Booking Form - Perq Soleil</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/vendor/flickity.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/jquery-tel.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <div class="fullscreen-form book-now-form">
+      <div class="nav-wrapper">
+        <div class="modal-nav nav-1">
+          <a href="/" class="main-logo modal-logo">
+            <img src="./assets/images/logo.png" alt="Main Logo Color" />
+          </a>
+          <a class="close-modal__nav-link" href="/">
+            Back to main site
+          </a>
+        </div>
+      </div>
+      <form id="msform">
+        <!-- progressbar -->
+        <ul id="progressbar">
+          <li class="active">Flight Details</li>
+          <div class="connector"></div>
+          <li>Passenger Information</li>
+          <div class="connector"></div>
+          <li>Transportation Information</li>
+          <div class="connector"></div>
+          <li>Requestor Information</li>
+        </ul>
+
+        <!-- fieldsets -->
+        <fieldset id="booking-form__step-1">
+          <h2 class="fs-title">Flight Details</h2>
+          <div class="form-group">
+            <div class="form__input--half">
+              <label for="bnf__travel-date">Travel Date</label>
+              <input
+                class="required"
+                type="text"
+                id="bnf__travel-date"
+                data-val="travel-date"
+                placeholder="Travel Date"
+                readonly="readonly"
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--half">
+              <label for="bnf__flight-numbers">Flight Number</label>
+              <input
+                class="required"
+                type="text"
+                id="bnf__flight-numbers"
+                data-val="flight-numbers"
+                placeholder="e.g. UA1234"
+                pattern="^([A-Z]{3}|[A-Z\d]{2})(?:\s?)(\d{1,4})$"
+              />
+              <div class="messages"></div>
+            </div>
+          </div>
+          <p class="service-request">Service Request</p>
+          <div class="form-group form-group--radio">
+            <div class="form__input--half">
+              <div class="input">
+                <input
+                  type="radio"
+                  name="bnf__service"
+                  id="bnf__departure"
+                  value="bnf__departure"
+                  class="required"
+                />
+                <label for="departure" aria-hidden="true">Departure</label>
+              </div>
+              <div class="input">
+                <input
+                  type="radio"
+                  name="bnf__service"
+                  id="bnf__arrival"
+                  value="bnf__arrival"
+                  class="required"
+                />
+                <label for="arrival" aria-hidden="true">Arrival</label>
+              </div>
+              <div class="input">
+                <input
+                  type="radio"
+                  name="bnf__service"
+                  id="bnf__both"
+                  value="bnf__both"
+                  class="required"
+                />
+                <label for="both" aria-hidden="true">Both</label>
+              </div>
+            </div>
+            <div class="radio-messages"></div>
+            <div class="form__input--half">
+              <input
+                type="button"
+                name="next"
+                class="next action-button w-100"
+                value="Next"
+              />
+            </div>
+          </div>
+          <div class="radio-messages"></div>
+        </fieldset>
+
+        <fieldset id="booking-form__step-2">
+          <h2 class="fs-title">Passenger Information</h2>
+          <div class="form-group">
+            <div class="form__input--third">
+              <label for="bnf__pri-passenger">Passenger First Name</label>
+              <input
+                class="required"
+                type="text"
+                id="bnf__pri-passenger-first-name"
+                data-val="pri-passenger"
+                placeholder="First Name"
+                maxlength="35"
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--third">
+              <label for="bnf__pri-passenger">Passenger Last Name</label>
+              <input
+                class="required"
+                type="text"
+                id="bnf__pri-passenger-last-name"
+                data-val="pri-passenger"
+                placeholder="Last Name"
+                maxlength="35"
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--third">
+              <label class="label-optional" for="bnf__pri-passenger">
+                Passenger Record Locator
+                <small class="optional">Optional</small>
+              </label>
+              <input
+                type="text"
+                id="bnf__pri-passenger-record-locator"
+                data-val="pri-passenger"
+                placeholder="Record Locator"
+                minlength="4"
+                maxlength="6"
+              />
+              <div class="messages"></div>
+            </div>
+          </div>
+          <div class="additional-passengers__container"></div>
+          <div class="additional-passengers__add">
+            <img src="./assets/images/plus-icon.svg" alt="Add Passenger" />
+            <h2 class="fs-title">Add an additional passenger</h2>
+          </div>
+          <div class="form-group--buttons">
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button"
+              value="Previous"
+            />
+            <input
+              type="button"
+              name="next"
+              class="next action-button"
+              value="Next"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset id="booking-form__step-3">
+          <h2 class="fs-title">Transportation Information</h2>
+          <div class="form-group">
+            <div class="form__input--third">
+              <label class="label-optional" for="bnf__car-service-company">
+                Car Service Company
+                <small class="optional">Optional</small>
+              </label>
+              <input
+                type="text"
+                id="bnf__car-service-company"
+                data-val="car-service-company"
+                placeholder="Company name"
+                maxlength="35"
+                aria-required
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--third">
+              <label class="label-optional" for="bnf__car-service-phone">
+                Car Service Phone Number
+                <small class="optional">Optional</small>
+              </label>
+              <input
+                type="text"
+                id="bnf__car-service-phone"
+                data-val="car-service-phone"
+                placeholder="Phone number"
+                minlength="6"
+                maxlength="35"
+                pattern="[^0-9x\-\.\(\)\+]"
+                aria-required
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--third">
+              <label
+                class="label-optional"
+                for="bnf__bnf__car-service-reservation"
+              >
+                Car Service Reservation Number
+                <small class="optional">Optional</small>
+              </label>
+              <input
+                type="text"
+                id="bnf__car-service-reservation"
+                data-val="car-service-reservation"
+                placeholder="Reservation number"
+                pattern="[^0-9a-z\*\-]"
+                maxlength="35"
+                aria-required
+              />
+              <div class="messages"></div>
+            </div>
+          </div>
+          <div class="form-group--buttons">
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button"
+              value="Previous"
+            />
+            <input
+              type="button"
+              name="next"
+              class="next action-button"
+              value="Next"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset id="booking-form__step-4">
+          <h2 class="fs-title">Contact Details</h2>
+          <div class="form-group">
+            <div class="form__input--third">
+              <label for="bnf__contact-first-name"
+                >Emergency Contact First Name</label
+              >
+              <input
+                class="required"
+                type="text"
+                id="bnf__contact-first-name"
+                data-val="contact-name"
+                placeholder="First Name"
+                maxlength="35"
+                aria-required
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--third">
+              <label for="bnf__contact-last-name"
+                >Emergency Contact Last Name</label
+              >
+              <input
+                class="required"
+                type="text"
+                id="bnf__contact-last-name"
+                data-val="contact-name"
+                placeholder="Last Name"
+                maxlength="35"
+                aria-required
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--third">
+              <label for="bnf__contact-phone"
+                >Emergency Contact Phone Number</label
+              >
+              <input
+                class=""
+                type="text"
+                id="bnf__contact-phone"
+                data-val="contact-phone"
+                placeholder="Phone number"
+                pattern="[^0-9x\-\.\(\)\+]"
+                minlength="6"
+                aria-required
+              />
+              <div class="messages"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form__input--half">
+              <label for="bnf__req-first-name">Requestor's First Name</label>
+              <input
+                class="required"
+                type="text"
+                id="bnf__req-first-name"
+                data-val="req-first-name"
+                placeholder="First Name"
+                maxlength="35"
+                required
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--half">
+              <label for="bnf__req-last-name">Requestor's Last Name</label>
+              <input
+                class="required"
+                type="text"
+                class="required"
+                id="bnf__req-last-name"
+                data-val="req-last-name"
+                placeholder="Last Name"
+                maxlength="35"
+                required
+              />
+              <div class="messages"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form__input--half">
+              <label for="bnf__req-phone">Requestor's Phone Number</label>
+              <input
+                class="required"
+                type="text"
+                class="required"
+                id="bnf__req-phone"
+                data-val="req-phone"
+                placeholder="Phone number"
+                minlength="6"
+                pattern="[^0-9x\-\.\(\)\+]"
+                required
+              />
+              <div class="messages"></div>
+            </div>
+            <div class="form__input--half">
+              <label for="bnf__req-email">Requestor's Email</label>
+              <input
+                class="required"
+                type="email"
+                id="bnf__req-email"
+                data-val="req-email"
+                placeholder="Email"
+                required
+              />
+              <div class="messages"></div>
+            </div>
+          </div>
+          <div class="form-group--buttons">
+            <input
+              type="button"
+              name="previous"
+              class="previous action-button"
+              value="Previous"
+            />
+            <input
+              type="submit"
+              name="submit"
+              class="submit action-button"
+              value="Submit"
+            />
+          </div>
+        </fieldset>
+        <fieldset id="booking-form__step-result">
+          <div id="booking-form__step-result--success">
+            <h2 class="fs-title">Success!</h2>
+            <div class="thank-you">
+              Thank you for your request. A member of Perq Soleil will be in
+              touch with you shortly to confirm your trip.
+            </div>
+            <input
+              type="button"
+              name="submit-new"
+              class="submit-new action-button"
+              value="Submit another Request"
+            />
+          </div>
+          <div id="booking-form__step-result--failure">
+            <h2 class="fs-title error">Error</h2>
+            <div class="submission-errors"></div>
+            <div class="form-group">
+              <input
+                type="button"
+                name="previous"
+                class="previous action-button"
+                value="Go back"
+              />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="./assets/vendor/jQuery.3-3-1.min.js"></script>
+    <script src="./assets/vendor/jquery-ui.min.js"></script>
+    <script src="./assets/vendor/jquery-tel.min.js"></script>
+    <script src="./assets/vendor/lodash.4.17.4.core.js"></script>
+    <script src="./assets/vendor/flickity.min.js"></script>
+    <script src="./assets/vendor/moment.2.18.1.min.js"></script>
+    <script src="./assets/vendor/validate.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
