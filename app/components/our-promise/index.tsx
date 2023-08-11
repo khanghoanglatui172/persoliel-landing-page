@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 function OurPromise() {
@@ -13,13 +12,9 @@ function OurPromise() {
                     Simplified travel, extraordinary service
                 </h1>
                 <div className='text-center w-[57rem] m-auto'>
-                <span className='text-neutral-700 text-[21px] leading-[29.40px]'>
-                    Picture your own airport concierge: A personal assistant to meet your needs, ensuring that every step of your departure, connection, or arrival is swift and smooth&nbsp;
+                <span className='text-app-dark text-[21px] leading-[29.40px]'>
+                    Picture your own airport concierge: A personal assistant to meet your needs, ensuring that every step of your departure, connection, or arrival is swift and smooth.
                 </span>
-                    <Link href='#' className='text-amber-800 text-[21px] font-medium underline leading-[29.40px]'>
-                        this is a text link
-                    </Link>
-                    <span className='text-neutral-700 text-[21px] leading-[29.40px]'>.</span>
                 </div>
             </div>
             <div className='m-auto w-5/6'>

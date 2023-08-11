@@ -12,7 +12,7 @@ function Banner() {
         }
     }
     return (
-        <div className='w-full h-[45.7rem] relative' onClick={onVideoClick}>
+        <div className='w-[100%] h-[45.7rem] relative' onClick={onVideoClick}>
             <video ref={videoRef} autoPlay muted loop  className='object-cover object-banner-video w-[100%] h-[100%] z-0'>
                 <source src={'/banner.mp4'} type='video/mp4'/>
             </video>
@@ -20,8 +20,8 @@ function Banner() {
                 className='w-[62.2rem] h-[100%] absolute top-0 left-0 bg-gradient-to-r from-layer from-[30%] z-[1]'/>
             <div className='w-5/6 h-[100%] m-auto absolute top-[50%] left-20 translate-y-[-20%] z-[3]'>
                 <div
-                    className='banner-title text-app-blue text-[3.6rem] font-larken not-italic !font-thin leading-[3.9rem] mb-10'>Enjoy
-                    a friction-free<br/>journey between<br/>car and cabin seat.
+                    className='w-[30rem] text-app-blue text-[3.6rem] font-larken not-italic !font-thin leading-[3.9rem] mb-10'>Enjoy
+                    a friction-free journey between car and cabin seat.
                 </div>
                 <Link href='#' className='w-[162px] h-[73px] relative'>
                     <div className='w-[148.80px] h-[61px] left-[6.23px] top-[6px] absolute bg-app-amber'/>

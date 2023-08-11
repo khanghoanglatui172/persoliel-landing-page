@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    @apply max-w-screen-xl flex justify-center m-auto bg-app-bg font-brother1816 text-app-blue
+    @apply max-w-screen-xl m-auto bg-app-bg font-brother1816 text-app-blue
 }
 
 .slick-track{

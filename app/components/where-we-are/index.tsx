@@ -1,14 +1,113 @@
 "use client"
-import React from 'react';
-import Image from 'next/image';
+import React, {useState} from 'react';
 import {ComposableMap, Geographies, Geography} from 'react-simple-maps'
-import Country from "@/app/components/where-we-are/country";
+import Continents from "@/app/components/where-we-are/continents";
+import CountryTab from "@/app/components/where-we-are/country-tab";
 
-const countries = [
-    'Africa', 'Asia', 'Australia/ Oceania', 'Europe', 'North America', 'South America'
+const continents = [
+    {
+        id: 1,
+        name: 'Africa',
+        countries: [{"id": 0, "name": "Egypt", "airports": []}, {
+            "id": 1,
+            "name": "Kenya",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)"]
+        }, {
+            "id": 2,
+            "name": "Morocco",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)"]
+        }, {"id": 3, "name": "Mozambique", "airports": []}, {"id": 4, "name": "Rwanda", "airports": []}]
+    },
+    {
+        id: 2,
+        name: 'Asia',
+        countries: [{"id": 0, "name": "China", "airports": []}, {
+            "id": 1,
+            "name": "India",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)"]
+        }, {
+            "id": 2,
+            "name": "Indonesia",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)"]
+        }, {"id": 3, "name": "Iran", "airports": []}, {"id": 4, "name": "Israel", "airports": []}, {
+            "id": 5,
+            "name": "Japan",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)"]
+        },]
+    },
+    {
+        id: 3,
+        name: 'Australia/ Oceania',
+        countries: [{
+            "id": 0,
+            "name": "Australia",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 1,
+            "name": "French Polynesia",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)"]
+        }, {"id": 2, "name": "New Zealand", "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)"]}]
+    },
+    {
+        id: 4,
+        name: 'Europe',
+        countries: [{
+            "id": 0,
+            "name": "Austria",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 1,
+            "name": "Belgium",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 2,
+            "name": "Bulgaria",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 3,
+            "name": "Croatia",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 4,
+            "name": "Cyprus",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 5,
+            "name": "Netherlands",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 6,
+            "name": "North Macedonia",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 7,
+            "name": "Norway",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 8,
+            "name": "Poland",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 9,
+            "name": "Portugal",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }, {
+            "id": 10,
+            "name": "Romania",
+            "airports": ["Bengaluru (BLR)", "Chennai (MAA)", "Delhi (DEL)", "Goa (GOA)", "Hyderabad (HYD)", "Jaipur (JAI)", "Kochi (COK)", "Kolkata (CCU)"]
+        }]
+    },
 ]
 
 function WhereWeAre() {
+
+    const [countries, setCountries] = useState<[]>([])
+    const [countryTab, setCountryTab] = useState<boolean>(false)
+    const handleContinent = (data: any) => {
+        setCountryTab(() => true);
+        setCountries(data)
+    }
+
     return (
         <div id='whereweare' className={`pt-24 pt-24 h-[1000px]`}
              style={{background: 'linear-gradient(180deg, #385D7D 35%, #1A4163 100%)'}}>
@@ -28,37 +127,11 @@ function WhereWeAre() {
                     </div>
                 </div>
             </div>
-            <div className='w-5/6 m-auto'>
+            <div className='w-5/6 m-auto relative'>
                 <div className='flex items-center justify-between'>
-                    <div className='relative'>
-                        <ul>
-                            {
-                                countries.length && countries.map((text: string, index: number) => (
-                                    <li key={index} className='h-[4rem] overflow-hidden flex'>
-                                        <Country name={text} isLast={countries.length - 1 === index}/>
-                                    </li>
-                                ))
-                            }
-                        </ul>
-                        <div className='absolute top-[-2.5rem] left-[15rem] z-[3]'>
-                            <div className="w-[327.51px] h-[511px] relative bg-white px-3">
-                                <div className='absolute h-1 w-[100%] top-0 left-0 bg-amber-200'></div>
-                                <div className="w-[282.44px] h-[454.93px] left-[33.05px] top-[34.91px] absolute">
-                                    <div
-                                        className="w-[121.19px] h-[16.93px] left-0 top-0 absolute text-neutral-700 text-base font-medium uppercase leading-none">Choose
-                                        one:
-                                    </div>
-                                    <div
-                                        className="w-[129.20px] h-[414.72px] left-0 top-[40.20px] absolute text-app-blue text-[15px] font-medium leading-[15px]">Albania<br/><br/>Belgium<br/><br/>Bulgaria<br/><br/>Croatia<br/><br/>Czech
-                                        Republic<br/><br/>Denmark<br/><br/>Estonia<br/><br/>France<br/><br/>Germany<br/><br/>Greece<br/><br/>Hungary<br/><br/>Iceland<br/><br/>Italy<br/><br/>Latvia
-                                    </div>
-                                    <div
-                                        className="w-[142.22px] h-[412.61px] left-[140.22px] top-[40.20px] absolute text-slate-600 text-[15px] font-medium leading-[15px]">Lithuania<br/><br/>Luxembourg<br/><br/>Montenegro<br/><br/>Netherlands<br/><br/>North
-                                        Madedonia<br/><br/>Norway<br/><br/>Portugal<br/><br/>Romania<br/><br/>Slovakia<br/><br/>Slovenia<br/><br/>Spain<br/><br/>Turkey<br/><br/>United
-                                        Kingdom<br/></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className='flex'>
+                        <Continents continents={continents} onContinentClick={handleContinent}/>
+                        {countryTab && <CountryTab countries={countries}/>}
                     </div>
                     <div className='w-[800px]'>
                         <ComposableMap>
