@@ -45,7 +45,7 @@ export default function Form({
       <div className="w-[42%] h-[400px]">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="w-[100%] h-[400px] flex flex-col justify-around items-center bg-white p-10 shadow-lg">
-            <div className="w-[90%] flex flex-row justify-around items-center bg-bgInput gap-8 columns-3">
+            <div className="w-[90%] flex flex-row justify-around items-center gap-8 columns-3">
               <input
                 placeholder="First name"
                 className="w-[100%] h-[60px] flex-grow  bg-bgInput pl-2"

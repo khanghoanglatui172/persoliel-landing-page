@@ -42,7 +42,7 @@ module.exports = {
         larken: ["var(--font-larken)"],
       },
       backgroundPosition: {
-        "who-we-are-percentage": "5% 35%",
+        "who-we-are-percentage": "5% 47%",
         "testimonials-percentage": "5% 50%",
         "discover-perq-soleil": "26rem -9rem",
         "left-center": "center left 5rem",

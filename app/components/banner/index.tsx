@@ -6,7 +6,7 @@ function Banner() {
         <div className='w-full h-[45.7rem] relative'>
             <VideoBanner src={'/banner.mp4'} classes={'object-cover object-banner-video w-[100%] h-[100%] z-0'}/>
             <div
-                className='w-[62.2rem] h-[100%] absolute top-0 object-banner-video left-0 bg-gradient-to-r from-layer from-[30%] z-[1]'/>
+                className='w-[62.2rem] h-[100%] absolute top-0 left-0 bg-gradient-to-r from-layer from-[30%] z-[1]'/>
             <div className='w-5/6 h-[100%] m-auto absolute top-[50%] left-20 translate-y-[-20%] z-[3]'>
                 <div
                     className='banner-title text-app-blue text-[3.6rem] font-larken not-italic !font-thin leading-[3.9rem] mb-10'>Enjoy
