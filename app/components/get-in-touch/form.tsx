@@ -1,7 +1,7 @@
 "use client";
 
 import { yupResolver } from "@hookform/resolvers/yup";
-import React, { useRef } from "react";
+import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
@@ -48,25 +48,25 @@ export default function Form({
             <div className="w-[90%] flex flex-row justify-around items-center gap-8 columns-3">
               <input
                 placeholder="First name"
-                className="w-[100%] h-[60px] flex-grow  bg-bgInput pl-2"
+                className="w-[100%] h-[60px] flex-grow  bg-bgInput placeholder:text-content pl-4 font-medium"
                 type="text"
                 {...register("first_name", { required: true })}
               />
               <input
                 placeholder="Last Name"
-                className="w-[100%] h-[60px] flex-grow  bg-bgInput pl-2"
+                className="w-[100%] h-[60px] flex-grow  bg-bgInput placeholder:text-content pl-4 font-medium"
                 type="text"
                 {...register("last_name", { required: true })}
               />
             </div>
             <input
-              className="w-[90%] h-[60px] bg-bgInput pl-2"
+              className="w-[90%] h-[60px] bg-bgInput placeholder:text-content pl-4 font-medium"
               type="text"
               placeholder="Email"
               {...register("email", { required: true })}
             />
             <textarea
-              className="w-[90%] h-[90px] bg-bgInput pl-2 pt-2"
+              className="w-[90%] h-[90px] bg-bgInput placeholder:text-content pl-4 font-medium pt-4"
               style={{ resize: "none" }}
               placeholder="Detail"
               {...register("detail", { required: true })}

@@ -39,11 +39,11 @@ function Advisors() {
     }
   }
   return (
-    <div className="flex items-center justify-center h-[100vh]">
-      <div className="w-[80rem] h-[52.625rem] relative bg-white bg-opacity-50 flex">
-        <Information />
-        <FormAdvisors submit={handleSubmit} />
-      </div>
+    <div className="flex justify-center h-[100vh] w-[100vw] bg-opacity-50 overflow-auto">
+      {/* <div className="flex relative bg-white bg-opacity-50 overflow-auto"> */}
+      <Information />
+      <FormAdvisors submit={handleSubmit} />
+      {/* </div> */}
     </div>
   );
 }

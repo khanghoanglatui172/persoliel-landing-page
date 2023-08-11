@@ -54,54 +54,56 @@ function FormAdvisors({
   };
 
   return (
-    <div className="flex flex-col items-center  relative flex-grow w-[50%] bg-layer pt-[4.563rem] gap-5">
+    <div className="relative flex-grow w-[50%] h-[100%] min-h-[842px] pt-[4.563rem] my-auto pb-10 px-16 bg-layer bg-[url('/backgrounds/background-contourmap4-subpage.svg')] bg-repeat-x bg-advisor-bg">
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex flex-col justify-around items-center flex-grow gap-5 w-[100%] h-[43.75rem]">
-          <h4 className=" text-titleContent text-3xl font-normal leading-loose">
-            Get in touch
-          </h4>
+        <div className="flex flex-col justify-around items-center flex-grow gap-5 w-[100%]">
+          <div className="w-[100%]">
+            <h4 className="text-bgButton text-3xl font-normal leading-loose text-start">
+              Get in touch
+            </h4>
+          </div>
           <div className="w-[100%] flex flex-row justify-around items-center gap-8 columns-3">
             <input
               placeholder="First name"
-              className="w-[100%] h-[3.75rem] flex-grow  bg-white pl-2  placeholder:text-content placeholder:font-brother1816 placeholder:font-semibold"
+              className="w-[100%] h-[3.75rem] flex-grow  bg-white pl-4 placeholder:text-content placeholder:font-brother1816 placeholder:font-medium"
               type="text"
               {...register("first_name", { required: true })}
             />
             <input
               placeholder="Last Name"
-              className="w-[100%] h-[3.75rem] flex-grow  bg-white pl-2 placeholder:text-content placeholder:font-brother1816 placeholder:font-semibold"
+              className="w-[100%] h-[3.75rem] flex-grow  bg-white pl-4 placeholder:text-content placeholder:font-brother1816 placeholder:font-medium"
               type="text"
               {...register("last_name", { required: true })}
             />
           </div>
           <input
-            className="w-[100%] h-[3.75rem] bg-white pl-2 placeholder:text-content placeholder:font-brother1816 placeholder:font-semibold"
+            className="w-[100%] h-[3.75rem] bg-white pl-4 placeholder:text-content placeholder:font-brother1816 placeholder:font-medium"
             type="text"
             placeholder="Company Name"
             {...register("company", { required: true })}
           />
           <input
-            className="w-[100%] h-[3.75rem] bg-white pl-2 placeholder:text-content placeholder:font-brother1816 placeholder:font-semibold"
+            className="w-[100%] h-[3.75rem] bg-white pl-4 placeholder:text-content placeholder:font-brother1816 placeholder:font-medium"
             type="text"
             placeholder="Email"
             {...register("email", { required: true })}
           />
           <input
-            className="w-[100%] h-[3.75rem] bg-white pl-2 placeholder:text-content placeholder:font-brother1816 placeholder:font-semibold"
+            className="w-[100%] h-[3.75rem] bg-white pl-4 placeholder:text-content placeholder:font-brother1816 placeholder:font-medium [-moz-appearance:_textfield] [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none"
             type="number"
-            placeholder="Number"
+            placeholder="Phone"
             {...register("phone", { required: true })}
           />
 
           <input
-            className="w-[100%] h-[3.75rem] bg-white pl-2 placeholder:text-content placeholder:font-brother1816 placeholder:font-semibold"
+            className="w-[100%] h-[3.75rem] bg-white pl-4 placeholder:text-content placeholder:font-brother1816 placeholder:font-medium"
             type="text"
             placeholder="What is your line of business?"
             {...register("business", { required: true })}
           />
 
           <textarea
-            className="w-[100%] h-[10.302rem] bg-white pl-2 pt-2 placeholder:text-content placeholder:font-brother1816 placeholder:font-semibold"
+            className="w-[100%] h-[7rem] bg-white pl-4 pt-2 placeholder:text-content placeholder:font-brother1816 placeholder:font-medium "
             style={{ resize: "none" }}
             placeholder="How can we support you?"
             {...register("detail_support", { required: true })}
@@ -109,7 +111,7 @@ function FormAdvisors({
           <div className="flex justify-end w-[100%]">
             <button
               // disabled={pending}
-              className="w-[14.375rem] h-[48px] text-center text-amber-50 text-base font-bold bg-bgButton hover:shadow-lg hover:border-black hover:border-[1px]"
+              className="w-[14.375rem] h-[48px] text-center text-amber-50 text-base font-bold tracking-[0.16em] bg-bgButton hover:shadow-lg hover:border-black hover:border-[1px]"
               type="submit"
             >
               SUBMIT

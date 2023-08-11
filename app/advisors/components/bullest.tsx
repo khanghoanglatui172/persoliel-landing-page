@@ -2,13 +2,13 @@ import React from "react";
 
 function Bullets() {
   return (
-    <div style={{ width: 17.19, height: 132, position: "relative" }}>
+    <div style={{ width: 17.19, height: 145, position: "relative" }}>
       <div
         style={{
-          width: 120,
+          width: 145,
           height: 1,
           left: 8,
-          top: 132,
+          top: 145,
           position: "absolute",
           transform: "rotate(-90deg)",
           transformOrigin: "0 0",
@@ -32,7 +32,7 @@ function Bullets() {
           width: 17.19,
           height: 17.92,
           left: 0,
-          top: 57,
+          top: 65,
           position: "absolute",
           background: "#9E513F",
           border: "3.86px #FBF1D4 solid",
@@ -44,7 +44,7 @@ function Bullets() {
           width: 17.19,
           height: 17.92,
           left: 0,
-          top: 114,
+          top: 130,
           position: "absolute",
           background: "#9E513F",
           border: "3.86px #FBF1D4 solid",
