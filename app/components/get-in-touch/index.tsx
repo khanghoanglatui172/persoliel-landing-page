@@ -46,7 +46,7 @@ function GetInTouch() {
       <Reserve />
       <div className="w-[1286px] z-50 flex flex-col gap-10 py-20 relative">
         <div>
-          <h5 className="h-8 text-center text-content text-base font-medium uppercase tracking-wide">
+          <h5 className="h-8 text-center text-content text-base font-larken uppercase tracking-wide">
             Get In Touch
           </h5>
           <h2 className="text-center text-content text-[50px] font-larken leading-[53.25px]">

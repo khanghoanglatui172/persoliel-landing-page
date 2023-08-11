@@ -8,21 +8,21 @@ import WhereWeAre from "@/app/components/where-we-are";
 import WhoWeAre from "@/app/components/who-we-are";
 import Testimonials from "@/app/components/testimonials";
 import Footer from "./components/footer";
-import TopBanner from "./components/top-banner";
+// import TopBanner from "./components/top-banner";
 
 export default function Home() {
-    return (
-        <main>
-            <NavBar/>
-            <Banner/>
-            <OurPromise/>
-            <WhatWeDo/>
-            <WhereWeAre/>
-            <OurGuests/>
-            <WhoWeAre/>
-            <Testimonials/>
-            <GetInTouch/>
-            <Footer/>
-        </main>
-    );
+  return (
+    <main>
+      <NavBar />
+      <Banner />
+      <OurPromise />
+      <WhatWeDo />
+      <WhereWeAre />
+      <OurGuests />
+      <WhoWeAre />
+      <Testimonials />
+      <GetInTouch />
+      <Footer />
+    </main>
+  );
 }

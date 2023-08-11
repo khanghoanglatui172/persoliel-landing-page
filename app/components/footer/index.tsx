@@ -24,7 +24,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="pl-20 mt-5 flex flex-row justify-start gap-10 text-[15px] w-[1286px]">
+      <div className="pl-20 mt-5 flex flex-row justify-start gap-10 text-[15px] w-[100%]">
         <p>© 2023 Perq Soleil. All Rights Reserved.</p>
         <p>(202) 573-7705</p>
         <p>contact@perqsoleil.com</p>

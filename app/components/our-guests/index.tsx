@@ -41,24 +41,21 @@ const content = {
 
 function OurGuests() {
   return (
-    <div id="ourpartners" className={`bg-whiteBg bg-[url('/backgrounds/background-contourmap3-travelers.svg')] bg-center bg-no-repeat h-[65rem] w-full`} >
+    <div
+      id="ourpartners"
+      className={`bg-whiteBg bg-[url('/backgrounds/background-contourmap3-travelers.svg')] bg-center bg-no-repeat h-[65rem] w-full`}
+    >
       <div className="grid grid-cols-3 gap-3 relative w-[1286px] h-[1024px]">
         <div className="grid grid-cols-3 gap-3 w-[inherit] h=[900px] p-10">
           <div className="z-30 flex items-center flex-col justify-center gap-y-10 p-10">
             <div>
-              <p
-                className="text-content w-[173px] h-8 text-base font-semibold uppercase tracking-wide"
-              >
+              <p className="text-content w-[173px] h-8 text-base font-semibold uppercase tracking-wide">
                 Our Guests
               </p>
-              <h2
-                className="text-slate-600 text-[45px] font-light leading-[53.25px] font-larken mb-5"
-              >
+              <h2 className="text-slate-600 text-[45px] font-light leading-[53.25px] font-larken mb-5">
                 {content.title}
               </h2>
-              <p
-                className="w-60 h-[58px] text-neutral-700 text-[21px] leading-[29.40px]"
-              >
+              <p className="w-60 h-[58px] text-neutral-700 text-[21px] leading-[29.40px]">
                 {content.content}
               </p>
             </div>
