@@ -19,9 +19,9 @@ function Advisors() {
     "use server";
 
     try {
-      await mg.messages.create(emailConfig.domain || "tuanprodd@gmail.com", {
-        from: `Excited User <${emailConfig.email}>`,
-        to: ["tuandd.310797@gmail.com"],
+      await mg.messages.create(emailConfig.domain as string, {
+        from: `Excited Main <${emailConfig.email}>`,
+        to: [`${emailConfig.email_to}`],
         subject: "New request - Become a partner",
         html: `
         <h1 style="margin-bottom: 10px;" >New request - Become a partner</h1>
