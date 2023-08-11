@@ -7,19 +7,6 @@ import Country from "@/app/components/where-we-are/country";
 const countries = [
     'Africa', 'Asia', 'Australia/ Oceania', 'Europe', 'North America', 'South America'
 ]
-const highlighted = [
-    'AZE', 'ALB', 'ARM', 'BIH', 'BGR',
-    'CYP', 'DNK', 'IRL', 'EST', 'AUT',
-    'CZE', 'FIN', 'FRA', 'GEO', 'DEU',
-    'GRC', 'HRV', 'HUN', 'ISL', 'ISR',
-    'ITA', 'LVA', 'BLR', 'LTU', 'SVK',
-    'LIE', 'MKD', 'MLT', 'BEL', 'FRO',
-    'AND', 'LUX', 'MCO', 'MNE', 'NLD',
-    'NOR', 'POL', 'PRT', 'ROU', 'MDA',
-    'SVN', 'ESP', 'SWE', 'CHE', 'TUR',
-    'GBR', 'UKR', 'SMR', 'SRB', 'VAT',
-];
-
 
 function WhereWeAre() {
     return (
@@ -78,10 +65,9 @@ function WhereWeAre() {
                             <Geographies geography='/topojson-file.json'>
                                 {({geographies}) =>
                                     geographies.map((geo) => {
-                                        const isHighlighted = highlighted.indexOf(geo.id) !== -1;
                                         return (
                                             <Geography key={geo.rsmKey} geography={geo}
-                                                       fill={isHighlighted ? "#082f49" : "#b4c0ca"}
+                                                       fill="#b4c0ca"
                                                        stroke="#94a3b8" style={{pressed: {outline: "none"},}}/>
                                         )
                                     })

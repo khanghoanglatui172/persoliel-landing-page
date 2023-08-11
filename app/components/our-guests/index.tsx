@@ -49,7 +49,7 @@ function OurGuests() {
         <div className="grid grid-cols-3 gap-3 w-[inherit] h=[900px] p-10">
           <div className="z-30 flex items-center flex-col justify-center gap-y-10 p-10">
             <div>
-              <p className="text-content w-[173px] h-8 text-base font-semibold uppercase tracking-wide">
+              <p className="text-content w-[173px] h-8 text-base font-medium uppercase tracking-wide">
                 Our Guests
               </p>
               <h2 className="text-slate-600 text-[45px] font-light leading-[53.25px] font-larken mb-5">

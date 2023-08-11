@@ -48,15 +48,12 @@ function NavBar() {
   }, [scrollTop]);
 
   return (
-    <div className="bg-app-bg h-[112px]">
-      <TopBanner />
+    <div className="bg-app-bg">
       <div className="nav-bar text-app-blue">
         <div className="h-16 m-auto flex items-center justify-between relative">
           <div className="w-[149px] h-[139.69px] ps-20 relative">
             <div
-              className="w-[inherit] h-[inherit] top-[27%] absolute"
-              style={{ zIndex: 3 }}
-            >
+              className="w-[inherit] h-[inherit] top-[27%] absolute z-[3]">
               <Image
                 src="/logos/logo.svg"
                 alt="app-logo"

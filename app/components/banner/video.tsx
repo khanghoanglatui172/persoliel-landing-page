@@ -17,9 +17,12 @@ function VideoBanner({src, classes}: VideoBannerProps) {
         }
     }
     return (
-        <video ref={videoRef} autoPlay muted loop onClick={onVideoClick} className={classes}>
-            <source src={src} type='video/mp4'/>
-        </video>
+        <div>
+            <video ref={videoRef} autoPlay muted loop onClick={onVideoClick} className={classes}>
+                <source src={src} type='video/mp4'/>
+            </video>
+        </div>
+
     )
 
 }
