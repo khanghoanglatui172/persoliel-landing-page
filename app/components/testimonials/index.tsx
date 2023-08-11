@@ -73,17 +73,16 @@ function QuoteItem({ quote }: any) {
 
 function Testimonials() {
   const settings = {
-    centerMode: true,
     className: "center",
-    centerPadding: 3,
+    centerMode: true,
+    centerPadding: '3px',
     dots: false,
     arrows: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoPlay: true,
-    autoplaySpeed: 2000,
-    speed: 500,
+    autoplay: true,
+    speed: 2000,
   };
 
   return (
