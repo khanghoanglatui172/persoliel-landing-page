@@ -9,7 +9,7 @@ function Footer() {
         <Collaborate />
         <div className="flex flex-row justify-center gap-32 px-12">
           <div className="w-[55rem] flex-grow">
-            <p className="text-app-dark text-[24px] leading-[29.40px] pl-10">
+            <p className="text-app-dark text-[24px] font-light leading-[29.40px] pl-10">
               Perq Soleil was founded in Washington, DC in 2009 to provide
               premium Meet & Assist services to travelers worldwide.
             </p>

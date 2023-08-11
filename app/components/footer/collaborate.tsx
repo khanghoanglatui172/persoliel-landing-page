@@ -15,14 +15,14 @@ function Collaborate() {
         />
       </div>
       <div>
-        <h3 className="text-content text-[40px] font-light leading-[42.60px]">
+        <h3 className="text-content text-[40px] font-larken leading-[42.60px]">
           We collaborate with best-in-class.
         </h3>
       </div>
-      <div className="w-[259.19px] h-[57px] border border-amber-800 cursor-pointer flex items-center justify-center">
+      <div className="w-[259.19px] h-[57px] border border-app-amber cursor-pointer flex items-center justify-center">
         <Link
           href={"/advisors"}
-          className="h-7 text-center text-amber-800 text-[16.96px] font-semibold flex items-center"
+          className="h-7 text-center text-app-amber text-[16.96px] font-semibold flex items-center"
         >
           <span>BECOME A PARTNER</span>
           <Image
