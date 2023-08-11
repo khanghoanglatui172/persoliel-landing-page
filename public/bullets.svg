@@ -1,0 +1,8 @@
+<svg width="26" height="140" viewBox="0 0 26 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="bullets">
+<path id="icon-bullet-line-connector" d="M13 136L12 16" stroke="#9E513F" stroke-opacity="0.25" stroke-width="2.5" stroke-miterlimit="16" stroke-linejoin="bevel" stroke-dasharray="5 5"/>
+<path id="icon-bullet-lg" d="M21.1853 12.9605C21.1853 17.9093 17.3383 21.9211 12.5927 21.9211C7.84707 21.9211 4 17.9093 4 12.9605C4 8.01176 7.84707 4 12.5927 4C17.3383 4 21.1853 8.01176 21.1853 12.9605Z" fill="#9E513F" stroke="#FBF1D4" stroke-width="7.71429"/>
+<path id="icon-bullet-lg_2" d="M21.1853 69.9605C21.1853 74.9093 17.3383 78.9211 12.5927 78.9211C7.84707 78.9211 4 74.9093 4 69.9605C4 65.0118 7.84707 61 12.5927 61C17.3383 61 21.1853 65.0118 21.1853 69.9605Z" fill="#9E513F" stroke="#FBF1D4" stroke-width="7.71429"/>
+<path id="icon-bullet-lg_3" d="M21.1853 126.961C21.1853 131.909 17.3383 135.921 12.5927 135.921C7.84707 135.921 4 131.909 4 126.961C4 122.012 7.84707 118 12.5927 118C17.3383 118 21.1853 122.012 21.1853 126.961Z" fill="#9E513F" stroke="#FBF1D4" stroke-width="7.71429"/>
+</g>
+</svg>

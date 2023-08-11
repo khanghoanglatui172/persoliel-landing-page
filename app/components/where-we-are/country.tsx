@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import React, {useState} from "react";
+import {useState} from "react";
 
 function Country({name, isLast, onClick}: any) {
     const [chosen, setChosen] = useState<boolean>(false)

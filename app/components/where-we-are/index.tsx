@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react';
+import {useState} from 'react';
 import {ComposableMap, Geographies, Geography} from 'react-simple-maps'
 import Continents from "@/app/components/where-we-are/continents";
 import CountryTab from "@/app/components/where-we-are/country-tab";

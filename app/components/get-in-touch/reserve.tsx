@@ -5,7 +5,7 @@ import React from "react";
 function Reserve() {
   return (
     <div
-      className={`h-[35.25rem] w-[1286px] relative bg-[url('/backgrounds/image-womanseatedcoffee.jpg')] bg-center bg-no-repeat bg-cover`}
+      className={`h-[35.25rem] w-[100%] relative bg-[url('/backgrounds/image-womanseatedcoffee.jpg')] bg-center bg-no-repeat bg-cover`}
     >
       <div className="w-[100%] h-[100%] absolute top-0 left-0 bg-gradient-to-r from-layer-blue from-25% to-50% z-[1]"></div>
       <div className="absolute h-[25.625rem] w-[21.875rem] top-[7.875rem] left-[4.688rem] z-[2] flex flex-col justify-start gap-6">
