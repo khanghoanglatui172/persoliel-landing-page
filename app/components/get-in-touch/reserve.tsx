@@ -12,7 +12,7 @@ function Reserve() {
           Discover the Perq Soleil difference.
         </h3>
         <div className="w-56 h-[73px] border border-app-amber flex items-center justify-center">
-          <button className="uppercase w-[210.95px] h-[61px] bg-app-amber text-white font-medium">
+          <button className="uppercase w-[210.95px] h-[61px] bg-app-amber text-white font-bold">
             Reserve Now
           </button>
         </div>

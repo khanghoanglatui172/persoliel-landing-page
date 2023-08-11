@@ -12,6 +12,6 @@ body{
 }
 
 .slick-center #quote-item {
-    @apply bg-[#385D7D] text-white min-h-[22rem]
+    @apply bg-[#385D7D] text-white min-h-[22rem] duration-300
 }
 

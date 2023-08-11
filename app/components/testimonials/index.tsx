@@ -74,16 +74,16 @@ function QuoteItem({ quote }: any) {
 function Testimonials() {
   const settings = {
     centerMode: true,
-    className: "center",
-    centerPadding: 3,
+    className: 'center',
+    centerPadding: '3px',
     dots: false,
     arrows: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoPlay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
-    speed: 500,
+    speed: 1500,
   };
 
   return (
@@ -91,10 +91,10 @@ function Testimonials() {
       className={`bg-[url('/background-contourmap3.svg')] pt-24 bg-no-repeat bg-cover bg-testimonials-percentage w-[100%] h-[50rem] px-20`}
     >
       <div>
-        <h2 className="mb-11 text-center text-slate-600 text-[1rem] text-base font-medium uppercase tracking-wide">
+        <h2 className="mb-8 text-center text-[1rem] text-base font-medium uppercase tracking-wide">
           testimonials
         </h2>
-        <h1 className="text-center text-slate-600 text-[50px] font-light leading-[53.25px] mb-[1rem]">
+        <h1 className="text-center text-[50px] font-larken leading-[53.25px] mb-[1rem]">
           From travelers like you:
         </h1>
       </div>
