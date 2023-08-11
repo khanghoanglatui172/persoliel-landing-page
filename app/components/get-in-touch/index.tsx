@@ -44,12 +44,12 @@ function GetInTouch() {
   return (
     <div className="flex flex-col justify-center items-center ">
       <Reserve />
-      <div className="w-[1286px] bg-orange-100 z-50 flex flex-col gap-10 py-20 relative">
+      <div className="w-[1286px] z-50 flex flex-col gap-10 py-20 relative">
         <div>
           <h5 className="h-8 text-center text-content text-base font-medium uppercase tracking-wide">
             Get In Touch
           </h5>
-          <h2 className="text-center text-content text-[50px] font-light leading-[53.25px]">
+          <h2 className="text-center text-content text-[50px] font-larken leading-[53.25px]">
             {getInTouchData.title}
           </h2>
         </div>

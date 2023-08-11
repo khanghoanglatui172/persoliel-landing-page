@@ -31,7 +31,6 @@ module.exports = {
       content: "#385D7D",
       whiteBg: "#FDF8E9",
       content: "#385D7D",
-      whiteBg: "#FDF8E9",
       bgInput: "rgba(56, 93, 125, 0.04)",
       bgButton: "#9E513F",
       cardContent: "#444444",

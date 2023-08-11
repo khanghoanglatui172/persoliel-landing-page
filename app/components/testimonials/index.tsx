@@ -64,7 +64,7 @@ function QuoteItem({ quote }: any) {
           </span>
         </div>
         <div className="pt-4">
-          <Image src="/quotes.png" alt="quote" width={50} height={50} />
+          <Image src="/icons/quotes-bluebackgrd.svg" alt="quote" width={50} height={50} />
         </div>
       </div>
     </div>

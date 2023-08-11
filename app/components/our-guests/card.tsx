@@ -9,17 +9,17 @@ interface ICard {
 
 function Card({ card }: { card: ICard }) {
   return (
-    <div className="flex flex-col justify-between w-[330px] h-[343px] bg-whiteBg shadow relative">
+    <div className="flex bg-white flex-col justify-between w-[330px] h-[343px] shadow relative">
       <div className="absolute top-0 right-0">
         <div className=" w-[30px] h-[30px] bg-white  after:border-t-[30px] after:border-l-[30px]  after:border-t-rose-800  after:border-l-transparent after:w-0 after:absolute after:right-0 "></div>
       </div>
       <div className="p-5">
         <h4
-          className="text-slate-600 text-3xl font-normal font-brother1816"
+          className="text-3xl font-normal"
         >
           {card.title}
         </h4>
-        <p className="text-content text-[17px] leading-[22.95px] mt-5">
+        <p className="text-app-dark text-[17px] leading-[22.95px] mt-5">
           {card.content}
         </p>
       </div>
