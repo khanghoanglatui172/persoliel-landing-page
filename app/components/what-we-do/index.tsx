@@ -7,19 +7,19 @@ const dataCards = [
     {
         id: 1,
         title: 'Departure',
-        icon: 'icon-departure.svg',
+        icon: 'icons/icon-departure.svg',
         content: ['Meet curbside with boarding pass', 'Secure porter for luggage assistance', 'Expedite check in', 'Fast track through security', 'Escort to lounge, fulfill special requests', 'Escort to gate for on-time boarding']
     },
     {
         id: 2,
         title: 'Connection',
-        icon: 'icon-connection.svg',
+        icon: 'icons/icon-connection.svg',
         content: ['Meet at arrival gate', 'Escort to lounge', 'Fulfill special requests', 'Escort to gate for boarding']
     },
     {
         id: 3,
         title: 'Arrival',
-        icon: 'icon-arrival.svg',
+        icon: 'icons/icon-arrival.svg',
         content: ['Meet at arrival gate', 'Escort to baggage claim', 'Secure porter for luggage assistance', 'Coordinate with chauffeur', 'Escort to waiting car and driver', 'Assist with tracking delayed luggage']
     }
 ]
@@ -28,13 +28,12 @@ const dataCards = [
 function Card({card}: any) {
     return (
         <div
-            className='block min-h-[28.6rem] bg-white dark:bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700'>
+            className='block min-h-[28.6rem] bg-white dark:bg-white border border-gray-200 shadow'>
             <div className={`w-[inherit] h-16 relative`}>
-                <div className='w-[100%] h-[100%] absolute top-0 left-0 bg-app-blue z-3'></div>
                 <div
-                    className={`bg-[url('/card-header-bg.svg')] bg-no-repeat bg-center bg-cover absolute w-[100%] h-[100%] top-0 left-0 z-[2]`}>
+                    className={`bg-[url('/icons/card-header-graphic.svg')] bg-no-repeat bg-center bg-cover absolute w-[100%] h-[100%] top-0 left-0 z-[1]`}>
                 </div>
-                <div className='absolute left-[50%] top-[2rem] translate-x-[-50%]'>
+                <div className='absolute left-[50%] top-[2rem] translate-x-[-50%] z-[2]'>
                     <Image src={`/${card.icon}`} alt='' width={90} height={90}/>
                 </div>
             </div>
@@ -48,9 +47,9 @@ function Card({card}: any) {
                                     return (
                                         <li key={index} className='h-[2.5rem] overflow-hidden flex'>
                                             <div className='me-2'>
-                                                <Image src='/icon-bullet.svg' alt='' width={15} height={15}/>
+                                                <Image src='/icons/icon-bullet.svg' alt='' width={15} height={15}/>
                                                 {card.content.length - 1 !== index &&
-                                                    <Image src='/line-1.svg' alt='' width={3} height={1}
+                                                    <Image src='/icons/icon-bullet-line-connector.svg' alt='' width={3} height={1}
                                                            className='w-[1rem] h-[10rem]'/>}
                                             </div>
                                             <p className='text-app-dark text-[1rem] font-normal leading-[0.9rem]'>{text}</p>
@@ -76,7 +75,7 @@ function WhatWeDo() {
                 <h2 className='text-center text-[1rem] text-base font-medium uppercase tracking-wide'>
                     what we do
                 </h2>
-                <h1 className='text-center text-[50px] font-light leading-[53.25px] mb-[1rem]'>
+                <h1 className='text-center text-[50px] font-larken leading-[53.25px] mb-[1rem]'>
                     Minimize stress, optimize experience
                 </h1>
                 <div className='text-center w-[57rem] mb-14 m-auto'>

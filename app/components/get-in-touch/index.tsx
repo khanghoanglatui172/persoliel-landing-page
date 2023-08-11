@@ -59,14 +59,14 @@ function GetInTouch() {
         </div>
         <div className="absolute top-[36%] right-12 flex flex-col gap-8">
           <Image
-            src="/icon-instagram.svg"
+            src="/icons/icon-instagram.svg"
             alt="icon-instagram"
             height={22}
             width={22}
             className="ms-2 pt-0.5"
           />
           <Image
-            src="/icon-twitter.svg"
+            src="/icons/icon-twitter.svg"
             alt="icon-twitter"
             height={22}
             width={22}

@@ -6,7 +6,7 @@ function WhoWeAre() {
         <div id='whoweare' className={`bg-[url('/backgrounds/image-yourtrustedpartner_tom-barrett-M0AWNxnLaMw-unsplash.jpg')] bg-no-repeat bg-who-we-are-percentage bg-cover w-[100%] h-[46rem] relative`}>
             <div className='absolute w-[100%] h-[100%] top-0 right-0 z-[1] bg-gradient-to-l from-layer from-10% to-50%'></div>
             <div className='absolute w-fit h-[100%] top-0 right-0 z-[2]'>
-                <Image src='/logo-text-vertical.svg' alt='logo-text-vertical' width='100' height='100' className='w-[100%] h-[100%] text-right'/>
+                <Image src='/logos/logo-text-vertical.svg' alt='logo-text-vertical' width='100' height='100' className='w-[100%] h-[100%] text-right'/>
             </div>
             <div className='absolute w-5/6 h-[100%] m-auto top-[45%] left-20 z-[3] text-whiteBg'>
                 <div className='w-[33rem]'>

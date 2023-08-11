@@ -10,10 +10,10 @@ function Country({name, isLast, onClick}: any) {
     return (
         <>
             <div className='me-2'>
-                <Image src={`/${name === 'Europe' ? 'active-dot.svg' : 'white-dot.svg'}`} alt=''
+                <Image src={`/${name === 'Europe' ? 'icons/active-dot.svg' : 'icons/white-dot.svg'}`} alt=''
                        width={15} height={15}/>
                 {!isLast &&
-                    <Image src='/line-2.svg' alt='' width={3} height={1}
+                    <Image src='/icons/line-2.svg' alt='' width={3} height={1}
                            className='w-[1rem] h-[10rem]'/>}
             </div>
             <p className={`text-white ${name === 'Europe' ? '' : 'text-opacity-50'} text-xl font-medium leading-[0.9rem]`}>{name}</p>
